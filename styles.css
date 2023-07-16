@@ -7,7 +7,7 @@
 }
 
 /* shared styles */
-.btn-primary{
+.btn-primary {
     background-color: #FF900E;
     padding: 20px 24px;
     border: none;
@@ -70,19 +70,81 @@ li a {
 }
 
 .banner-description {
-    color:  #727272;
+    color: #727272;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
     margin-bottom: 50px;
     /* 162.5% */
 }
-.banner img{
+
+.banner img {
     width: 100%;
     margin-top: 50px;
 }
 
+/* main section */
 
+main {
+    max-width: 886px;
+    margin: 0 auto;
+}
+
+/* teams style */
+
+.teams-container {
+    /* padding: 0 912px 0 300px; */
+    display: flex;
+    align-items: center;
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr);
+    flex: 0.5; */
+    height: 80vh;
+    margin-left:40px;
+    /* margin-top: 50px; */
+}
+
+.teams-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: 443px 443px; */
+    gap: 1.5rem;
+    /* width: 50%; */
+   
+}
+.teams-img-container img{
+    width: 200px;
+    height: 200px;
+}
+
+.teams-content {
+
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.teams-content .teams-content-title {
+    color: #727272;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.teams-content .titleA {
+    color: #131313;
+}
+
+.teams-content .titleB {
+    color: #FF900E;
+}
+
+.teams-description {
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 24px;
+}
 
 
 
@@ -103,34 +165,39 @@ li a {
 
 /* mobile */
 @media screen and (max-width:576px) {
-    header{
+    header {
         padding: 20px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
-    .nav-title{
+
+    .nav-title {
         font-size: 40px;
         padding: 10px;
         margin-bottom: 25px;
     }
-    .banner-title{
+
+    .banner-title {
         font-size: 60px;
         margin-top: 30px;
     }
-   
+
 }
 
 /* tablet */
 @media screen and (min-width:576px) and (max-width:992px) {
-    header{
+    header {
         padding: 50px;
         /* width: auto; */
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
-    .nav-title{
+
+    .nav-title {
         font-size: 40px;
         margin-bottom: 30px;
     }
